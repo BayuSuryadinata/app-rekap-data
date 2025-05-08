@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stok Voucher</title>
+  <title>templet</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -28,6 +28,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
       </li>
     </ul>
 
@@ -146,7 +149,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Stok voucher</h1>
+            <h1 class="m-0">Starter Page</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -160,86 +163,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <section class="content">
-        <!-- small box -->
-        <div class="row">
-        <div class="col-lg-6 col-6">
-        <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
-                <p>Stok Voucher</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-6 col-6">
-        <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>12</h3>
-                <p>Voucher Error</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-        </div>
-        <!-- table -->
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Riwayat Restock Voucher</h3>
-
-                <div class="card-tools">
-                  <div class="input-group input-group-sm" style="width: 150px;">
-                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-
-                    <div class="input-group-append">
-                      <button type="submit" class="btn btn-default">
-                        <i class="fas fa-search"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body table-responsive p-0" style="height: 400px;">
-                <table class="table table-head-fixed text-nowrap">
-                  <thead>
-                    <tr>
-                      <th>Nama Kelas</th>
-                      <th>Tanggal</th>
-                      <th>Status</th>
-                      <th>Jumlah Voucher</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>XI RPL 1</td>
-                      <td>11-7-2014</td>
-                      <td><span class="tag tag-success">Restock</span></td>
-                      <td>75</td>
-                    </tr>
-                    <tr>
-                      <td>XI RPL 1</td>
-                      <td>11-8-2014</td>
-                      <td><span class="tag tag-success">Restock</span></td>
-                      <td>100</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </div>
-        </div>
-    </section>
+   
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->

@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>home</title>
+  <title>Penjualan Voucher</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -16,7 +16,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Theme style -->
   <link rel="stylesheet" href="themes/dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
 <div class="wrapper">
 
   <!-- Navbar -->
@@ -28,9 +28,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
       </li>
     </ul>
 
@@ -112,29 +109,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="stok-voucher.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Stok Voucher
-                <span class="right badge badge-danger">New</span>
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="penjualan-voucher.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Penjualan Voucher
-                <span class="right badge badge-danger">New</span>
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="komisi.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Komisi
-                <span class="right badge badge-danger">New</span>
               </p>
             </a>
           </li>
@@ -152,7 +146,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Starter Page</h1>
+            <h1 class="m-0">Penjualan Voucher</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -166,7 +160,50 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- /.content-header -->
 
     <!-- Main content -->
-   
+    <div class="content">
+         <!-- general form elements -->
+         <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Input Penjualan Voucher</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="bulan">Bulan</label>
+                    <input type="date" class="form-control" id="bulan" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="namaKelas">Nama Kelas</label>
+                    <input type="text" class="form-control" id="namaKelas" placeholder="XI RPL 1" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="jumlahPenjualan">Jumlah Penjualan</label>
+                    <input type="number" class="form-control" id="jumlahPenjualan" placeholder="255" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="voucherError">Voucher Error</label>
+                    <input type="number" class="form-control" id="voucherError" placeholder="3">
+                  </div>
+                  <div class="form-group">
+                    <label for="uploadBuktiVoucherError">Upload Bukti Voucher Error</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="uploadBuktiVoucherError">
+                        <label class="custom-file-label" for="uploadBuktiVoucherError">Pilih File</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Kirim</button>
+                </div>
+              </form>
+            </div>
+    </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->

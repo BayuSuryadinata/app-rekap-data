@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stok Voucher</title>
+  <title>Kelolah Akun</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -28,6 +28,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
       </li>
     </ul>
 
@@ -109,26 +112,34 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="stok-voucher.php" class="nav-link">
+            <a href="kelolah-akun.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Kelolah Akun
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="rekap-penjualan.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Rekap Penjualan
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="cash-flow" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Cash Flow
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="stok-voucher-admin.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Stok Voucher
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="penjualan-voucher.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Penjualan Voucher
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="komisi.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Komisi
               </p>
             </a>
           </li>
@@ -146,7 +157,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Stok voucher</h1>
+            <h1 class="m-0">Kelolah Akun</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -159,41 +170,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
     <!-- /.content-header -->
 
-    <!-- Main content -->
-    <section class="content">
-        <!-- small box -->
-        <div class="row">
-        <div class="col-lg-6 col-6">
-        <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
-                <p>Stok Voucher</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-6 col-6">
-        <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>12</h3>
-                <p>Voucher Error</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-        </div>
-        <!-- table -->
-        <div class="row">
-          <div class="col-12">
+    <!-- Main content --> 
+    <div class="content">
+    <div class="container-fluid">
+    <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Riwayat Restock Voucher</h3>
+                <h3 class="card-title"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-default">
+                  Tambah Akun
+                </button></h3>
 
                 <div class="card-tools">
                   <div class="input-group input-group-sm" style="width: 150px;">
@@ -208,28 +193,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </div>
               </div>
               <!-- /.card-header -->
-              <div class="card-body table-responsive p-0" style="height: 400px;">
+              <div class="card-body table-responsive p-0" style="height: 500px;">
                 <table class="table table-head-fixed text-nowrap">
                   <thead>
                     <tr>
+                      <th>No</th>
+                      <th>ID</th>
                       <th>Nama Kelas</th>
-                      <th>Tanggal</th>
+                      <th>Password</th>
                       <th>Status</th>
-                      <th>Jumlah Voucher</th>
+                      <th>Aksi</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
+                      <td>1</td>
+                      <td>21</td>
                       <td>XI RPL 1</td>
-                      <td>11-7-2014</td>
-                      <td><span class="tag tag-success">Restock</span></td>
-                      <td>75</td>
-                    </tr>
-                    <tr>
-                      <td>XI RPL 1</td>
-                      <td>11-8-2014</td>
-                      <td><span class="tag tag-success">Restock</span></td>
-                      <td>100</td>
+                      <td>xirpl123</td>
+                      <td>Penjual</td>
+                      <td><button type="button" class="btn btn-block btn-warning" data-toggle="modal" data-target="#modal-edit">Edit</button></td>
+                      <td><button type="button" class="btn btn-block btn-danger">Hapus</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -238,11 +223,101 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div>
             <!-- /.card -->
           </div>
-        </div>
-    </section>
+    </div>
+</div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+     <!-- /.modal tambah Akun -->
+     <div class="modal fade" id="modal-default">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Tambah Akun Baru</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+         <!-- general form elements -->
+              <form>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="namaKelasNew">Nama Kelas</label>
+                    <input type="text" class="form-control" id="namaKelasNew" placeholder="XI RPL 1" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordEdit">Password</label>
+                    <input type="password" class="form-control" id="passwordEdit" placeholder="xirpl1123" required>
+                  </div>
+                <!-- select -->
+                  <div class="form-group">
+                        <label>Pilih Status</label>
+                        <select class="form-control" required id="statusNew">
+                          <option value="superAdmin">Super Admin</option>
+                          <option value="viewer">Viewer</option>
+                          <option value="penjual">Penjual</option>
+                        </select>
+                      </div>
+                </div>        
+                <!-- /.card-body -->
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+              <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+              </form>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+
+      <!-- /.modal edit -->
+      <div class="modal fade" id="modal-edit">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Edit Akun</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+         <!-- general form elements -->
+              <form>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="namaKelasEdit">Nama Kelas</label>
+                    <input type="text" class="form-control" id="namaKelasEdit" placeholder="XI RPL 1" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordEdit">Password</label>
+                    <input type="password" class="form-control" id="passwordEdit" placeholder="xirpl1123" required>
+                  </div>
+                <!-- select -->
+                  <div class="form-group">
+                        <label>Pilih Status</label>
+                        <select class="form-control" required id="statusEdit">
+                          <option value="superAdmin">Super Admin</option>
+                          <option value="viewer">Viewer</option>
+                          <option value="penjual">Penjual</option>
+                        </select>
+                      </div>
+                </div>        
+                <!-- /.card-body -->
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Batal Edit</button>
+              <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+            </div>
+              </form>
+            </div>
+           
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

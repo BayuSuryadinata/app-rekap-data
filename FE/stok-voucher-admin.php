@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stok Voucher</title>
+  <title>Stok Voucher PIC Kelas</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -28,6 +28,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
       </li>
     </ul>
 
@@ -109,26 +112,34 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="stok-voucher.php" class="nav-link">
+            <a href="kelolah-akun.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Kelolah Akun
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="rekap-penjualan.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Rekap Penjualan
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="cash-flow" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Cash Flow
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="stok-voucher-admin.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Stok Voucher
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="penjualan-voucher.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Penjualan Voucher
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="komisi.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Komisi
               </p>
             </a>
           </li>
@@ -146,7 +157,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Stok voucher</h1>
+            <h1 class="m-0">Kelolah Stok Voucher</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -159,41 +170,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
     <!-- /.content-header -->
 
-    <!-- Main content -->
-    <section class="content">
-        <!-- small box -->
-        <div class="row">
-        <div class="col-lg-6 col-6">
-        <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
-                <p>Stok Voucher</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-6 col-6">
-        <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>12</h3>
-                <p>Voucher Error</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-        </div>
-        <!-- table -->
-        <div class="row">
-          <div class="col-12">
+    <!-- Main content --> 
+    <div class="content">
+    <div class="container-fluid">
+    <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Riwayat Restock Voucher</h3>
+                <h3 class="card-title">Stok Voucher PIC</h3>
 
                 <div class="card-tools">
                   <div class="input-group input-group-sm" style="width: 150px;">
@@ -208,7 +191,136 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </div>
               </div>
               <!-- /.card-header -->
-              <div class="card-body table-responsive p-0" style="height: 400px;">
+              <div class="card-body table-responsive p-0" style="height: 500px;">
+                <table class="table table-head-fixed text-nowrap">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>ID</th>
+                      <th>Nama Kelas</th>
+                      <th>Stok Voucher</th>
+                      <th>Voucher Error</th>
+                      <th>Riwayat</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>21</td>
+                      <td>XI RPL 1</td>
+                      <td>225</td>
+                      <td>2</td>
+                      <td><button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-riwayat">Lihat Riwayat</button></td>
+                      <td><button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#modal-tambah">Tambah</button></td>
+                      <td><button type="button" class="btn btn-block btn-warning" data-toggle="modal" data-target="#modal-edit">Edit</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+    </div>
+</div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+<!-- /.modal tambah -->
+<div class="modal fade" id="modal-tambah">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Tambah Stok Voucher dan Voucher Error</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+         <!-- general form elements -->
+              <form>
+                <div class="card-body">
+                <div class="form-group">
+                    <label for="tambahVoucherBulan">Bulan</label>
+                    <input type="date" class="form-control" id="tambahVoucherBulan" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="tambahStokVoucher">Tambah Stok Voucher</label>
+                    <input type="number" class="form-control" id="tambahStokVoucher" placeholder="75">
+                  </div>
+                  <div class="form-group">
+                    <label for="tambahVoucherError">Tambah Voucher Error</label>
+                    <input type="number" class="form-control" id="tambahVoucherError" placeholder="5">
+                  </div>
+                <!-- /.card-body -->
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+              <button type="submit" class="btn btn-success">Tambahkan</button>
+            </div>
+              </form>
+            </div>
+           
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+</div>
+<!-- modal edit -->
+<div class="modal fade" id="modal-edit">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Edit Stok Voucher dan Voucher Error</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+         <!-- general form elements -->
+              <form>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="editVoucherBulan">Bulan</label>
+                    <input type="date" class="form-control" id="editVoucherBulan" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="editStokVoucher">Edit Stok Voucher</label>
+                    <input type="number" class="form-control" id="editStokVoucher" placeholder="75">
+                  </div>
+                  <div class="form-group">
+                    <label for="editVoucherError">Edit Voucher Error</label>
+                    <input type="number" class="form-control" id="editVoucherError" placeholder="5">
+                  </div>
+                <!-- /.card-body -->
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+              <button type="submit" class="btn btn-warning">Simpan Perubahan</button>
+            </div>
+              </form>
+            </div>
+           
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+</div>
+
+<!-- Modal Riwayat -->
+<div class="modal fade" id="modal-riwayat">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Tambah Stok Voucher dan Voucher Error</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <div class="card-body table-responsive p-0" style="height: 400px;">
                 <table class="table table-head-fixed text-nowrap">
                   <thead>
                     <tr>
@@ -234,15 +346,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </tbody>
                 </table>
               </div>
-              <!-- /.card-body -->
             </div>
-            <!-- /.card -->
+           
           </div>
+          <!-- /.modal-content -->
         </div>
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+        <!-- /.modal-dialog -->
+    </div>
+</div>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -259,6 +370,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- To the right -->
 
     <!-- Default to the left -->
+
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
   </footer>
 </div>
