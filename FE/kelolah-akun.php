@@ -173,6 +173,63 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content --> 
     <div class="content">
     <div class="container-fluid">
+         <!-- Small Box (Stat card) -->
+        <div class="row">
+          <div class="col-lg-4 col-6">
+            <!-- small card -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>2</h3>
+
+                <p>Super Admin</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-user-plus"></i>
+              </div>
+              <a href="#" class="small-box-footer">
+                More info <i class="fas fa-arrow-circle-right"></i>
+              </a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-4 col-6">
+            <!-- small card -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>2</h3>
+
+                <p>Viewer</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-user-plus"></i>
+              </div>
+              <a href="#" class="small-box-footer">
+                More info <i class="fas fa-arrow-circle-right"></i>
+              </a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-4 col-6">
+            <!-- small card -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>15</h3>
+
+                <p>PIC</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-user-plus"></i>
+              </div>
+              <a href="#" class="small-box-footer">
+                More info <i class="fas fa-arrow-circle-right"></i>
+              </a>
+            </div>
+          </div>
+          <!-- ./col -->
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
     <div class="col-12">
             <div class="card">
               <div class="card-header">
@@ -212,7 +269,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td>21</td>
                       <td>XI RPL 1</td>
                       <td>xirpl123</td>
-                      <td>Penjual</td>
+                      <td>PIC</td>
                       <td><button type="button" class="btn btn-block btn-warning" data-toggle="modal" data-target="#modal-edit">Edit</button></td>
                       <td><button type="button" class="btn btn-block btn-danger">Hapus</button></td>
                     </tr>
@@ -256,7 +313,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <select class="form-control" required id="statusNew">
                           <option value="superAdmin">Super Admin</option>
                           <option value="viewer">Viewer</option>
-                          <option value="penjual">Penjual</option>
+                          <option value="pic">PIC</option>
                         </select>
                       </div>
                 </div>        
