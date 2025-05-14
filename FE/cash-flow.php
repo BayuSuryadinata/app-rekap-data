@@ -8,7 +8,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kelolah Akun</title>
+  <title>Cash Flow</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -178,31 +178,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="row">
           <div class="col-lg-4 col-6">
             <!-- small card -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>2</h3>
-
-                <p>Super Admin</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-user-plus"></i>
-              </div>
-              <a href="#" class="small-box-footer">
-                More info <i class="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-4 col-6">
-            <!-- small card -->
             <div class="small-box bg-success">
               <div class="inner">
                 <h3>2</h3>
 
-                <p>Viewer</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-user-plus"></i>
+                <p>KAS</p>
               </div>
               <a href="#" class="small-box-footer">
                 More info <i class="fas fa-arrow-circle-right"></i>
@@ -212,19 +192,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- ./col -->
           <div class="col-lg-4 col-6">
             <!-- small card -->
-            <div class="small-box bg-warning">
+            <div class="small-box bg-danger">
               <div class="inner">
-                <h3>15</h3>
+                <h3>2</h3>
 
-                <p>PIC</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-user-plus"></i>
+                <p>Pengeluaran</p>
               </div>
               <a href="#" class="small-box-footer">
                 More info <i class="fas fa-arrow-circle-right"></i>
               </a>
             </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-4 col-6">
+            <!-- small card -->
+      
           </div>
           <!-- ./col -->
         </div>
@@ -235,7 +217,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="card">
           <div class="card-header">
             <h3 class="card-title"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-default">
-                Tambah Akun
+                Tambah Laporan Keuangan
               </button></h3>
 
             <div class="card-tools">
@@ -257,23 +239,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <tr>
                   <th>No</th>
                   <th>ID</th>
-                  <th>Nama Kelas</th>
-                  <th>Password</th>
+                  <th>Tanggal</th>
+                  <th>Deskripsi</th>
+                  <th>Jumlah</th>
                   <th>Status</th>
                   <th>Aksi</th>
-                  <th></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
                   <td>21</td>
-                  <td>XI RPL 1</td>
-                  <td>xirpl123</td>
-                  <td>PIC</td>
-                  <td><button type="button" class="btn btn-block btn-warning" data-toggle="modal" data-target="#modal-edit">Edit</button></td>
+                  <td>02/05/2025</td>
+                  <td>Komisi Admin</td>
+                  <td>500.000</td>
+                  <td>Pengeluaran</td>
                   <td><button type="button" class="btn btn-block btn-danger">Hapus</button></td>
-                </tr>
               </tbody>
             </table>
           </div>
@@ -286,12 +267,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <!-- /.modal tambah Akun -->
+  <!-- /.modal tambah Laporan Keuangan -->
   <div class="modal fade" id="modal-default">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Tambah Akun Baru</h4>
+          <h4 class="modal-title">Tambah Laporan Keuangan</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -301,19 +282,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <form>
             <div class="card-body">
               <div class="form-group">
-                <label for="namaKelasNew">Nama Kelas</label>
-                <input type="text" class="form-control" id="namaKelasNew" placeholder="XI RPL 1" required>
+                <label for="tanggalKeuangan">Tanggal</label>
+                <input type="date" class="form-control" id="tanggalKeuangan" placeholder="12/02/2025" required>
               </div>
               <div class="form-group">
-                <label for="passwordEdit">Password</label>
-                <input type="password" class="form-control" id="passwordEdit" placeholder="xirpl1123" required>
+                <label for="deskripsiKeuangan">Deskripsi</label>
+                <input type="text" class="form-control" id="deskripsiKeuangan" placeholder="Komisi" required>
+              </div>
+              <div class="form-group">
+                <label for="jumlahKeuangan">Jumlah</label>
+                <input type="number" class="form-control" id="jumlahKeuangan" placeholder="500.000" required>
               </div>
               <!-- select -->
               <div class="form-group">
                 <label>Pilih Status</label>
-                <select class="form-control" required id="statusNew">
-                  <option value="superAdmin">Super Admin</option>
-                  <option value="pic">PIC</option>
+                <select class="form-control" required id="statusKeuangan">
+                  <option value="pemasukkan">Pemasukkan</option>
+                  <option value="pengeluaran">Pengeluaran</option>
                 </select>
               </div>
             </div>
@@ -357,6 +342,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <label>Pilih Status</label>
                 <select class="form-control" required id="statusEdit">
                   <option value="superAdmin">Super Admin</option>
+                  <option value="viewer">Viewer</option>
                   <option value="penjual">Penjual</option>
                 </select>
               </div>

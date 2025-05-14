@@ -130,7 +130,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
             </li>
             <li class="nav-item">
-              <a href="cash-flow" class="nav-link">
+              <a href="cash-flow.php" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Cash Flow
@@ -202,6 +202,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <th>Voucher Error</th>
                   <th>Riwayat</th>
                   <th>Aksi</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
