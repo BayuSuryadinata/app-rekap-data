@@ -114,7 +114,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="kelolah-akun.php" class="nav-link">
+              <a href="<?= BASEURL; ?>/admin/index" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Kelolah Akun
@@ -138,7 +138,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
             </li>
             <li class="nav-item">
-              <a href="stok-voucher-admin.php" class="nav-link">
+              <a href="<?= BASEURL ?>/logout" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Stok Voucher

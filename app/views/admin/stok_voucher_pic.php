@@ -13,9 +13,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="themes/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/themes/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="themes/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/themes/dist/css/adminlte.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
@@ -88,9 +88,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-          <div class="image">
-            <img src="themes/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-          </div>
           <div class="info">
             <a href="#" class="d-block">Alexander Pierce</a>
           </div>
@@ -114,7 +111,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="kelolah-akun.php" class="nav-link">
+              <a href="<?= BASEURL; ?>/admin/index" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Kelolah Akun
@@ -138,10 +135,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
             </li>
             <li class="nav-item">
-              <a href="stok-voucher-admin.php" class="nav-link">
+              <a href="<?= BASEURL ?>/logout" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Stok Voucher
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?= BASEURL ?>/logout" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Logout
                 </p>
               </a>
             </li>
@@ -380,11 +385,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- REQUIRED SCRIPTS -->
 
   <!-- jQuery -->
-  <script src="themes/plugins/jquery/jquery.min.js"></script>
+  <script src="<?= BASEURL; ?>/themes/plugins/jquery/jquery.min.js"></script>
   <!-- Bootstrap 4 -->
-  <script src="themes/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= BASEURL; ?>/themes/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- AdminLTE App -->
-  <script src="themes/dist/js/adminlte.min.js"></script>
+  <script src="<?= BASEURL; ?>/themes/dist/js/adminlte.min.js"></script>
 </body>
 
 </html>
