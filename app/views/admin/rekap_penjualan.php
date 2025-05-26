@@ -8,20 +8,20 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="themes/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/themes/plugins/fontawesome-free/css/all.min.css">
   <!-- daterange picker -->
-  <link rel="stylesheet" href="themes/plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/themes/plugins/daterangepicker/daterangepicker.css">
   <!-- Select2 -->
-  <link rel="stylesheet" href="themes/plugins/select2/css/select2.min.css">
-  <link rel="stylesheet" href="themes/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/themes/plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/themes/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
   <!-- dropzonejs -->
-  <link rel="stylesheet" href="themes/plugins/dropzone/min/dropzone.min.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/themes/plugins/dropzone/min/dropzone.min.css">
   <!-- DataTablet-->
-  <link rel="stylesheet" href="themes/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="themes/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="themes/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/themes/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/themes/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/themes/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="themes/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?= BASEURL; ?>/themes/dist/css/adminlte.min.css">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -95,9 +95,6 @@
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="themes/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
         </div>
@@ -121,7 +118,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="<?= BASEURL; ?>/admin/index" class="nav-link">
+            <a href="<?= BASEURL; ?>/admin/kelolah_akun" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Kelolah Akun
@@ -129,7 +126,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="rekap-penjualan.php" class="nav-link">
+            <a href="<?= BASEURL; ?>/admin/rekap_penjualan" class="nav-link" style="background-color: #494e53 !important; /* biru muda */
+                color: white !important;
+                font-weight: bold;
+                border-left: 5px solid #494e53;">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Rekap Penjualan
@@ -137,7 +137,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="cash-flow.php" class="nav-link">
+            <a href="<?= BASEURL; ?>/admin/cash_flow" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Cash Flow
@@ -145,13 +145,21 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= BASEURL ?>/logout" class="nav-link">
+            <a href="<?= BASEURL; ?>/admin/stok_voucher_pic" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Stok Voucher
               </p>
             </a>
           </li>
+          <li class="nav-item">
+              <a href="<?= BASEURL ?>/logout" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Logout
+                </p>
+              </a>
+            </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -167,7 +175,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>DataTables</h1>
+            <h1>Rekap Penjualan</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -328,29 +336,29 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="themes/plugins/jquery/jquery.min.js"></script>
+<script src="<?= BASEURL; ?>/themes/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="themes/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= BASEURL; ?>/themes/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Select2 -->
-<script src="themes/plugins/select2/js/select2.full.min.js"></script>
+<script src="<?= BASEURL; ?>/themes/plugins/select2/js/select2.full.min.js"></script>
 <!-- Bootstrap4 Duallistbox -->
-<script src="themes/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<script src="<?= BASEURL; ?>/themes/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
 <!-- InputMask -->
-<script src="themes/plugins/moment/moment.min.js"></script>
-<script src="themes/plugins/inputmask/jquery.inputmask.min.js"></script>
+<script src="<?= BASEURL; ?>/themes/plugins/moment/moment.min.js"></script>
+<script src="<?= BASEURL; ?>/themes/plugins/inputmask/jquery.inputmask.min.js"></script>
 <!-- date-range-picker -->
-<script src="themes/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="<?= BASEURL; ?>/themes/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- bootstrap color picker -->
-<script src="themes/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="<?= BASEURL; ?>/themes/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="themes/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="<?= BASEURL; ?>/themes/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Bootstrap Switch -->
-<script src="themes/dist/js/demo.js"></script>
+<script src="<?= BASEURL; ?>/themes/dist/js/demo.js"></script>
 <!-- AdminLTE App -->
-<script src="themes/dist/js/adminlte.min.js"></script>
+<script src="<?= BASEURL; ?>/themes/dist/js/adminlte.min.js"></script>
 
 <!-- AdminLTE for demo purposes -->
-<script src="themes/dist/js/demo.js"></script>
+<script src="<?= BASEURL; ?>/themes/dist/js/demo.js"></script>
 <!-- Page specific script -->
 <script>
   $(function () {

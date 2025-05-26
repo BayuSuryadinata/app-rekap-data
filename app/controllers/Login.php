@@ -9,7 +9,7 @@ class Login extends Controller
                 header('Location: ' . BASEURL . '/admin/kelolah_akun');
                 exit;
             } elseif ($_SESSION['role'] == 'user') {
-                header('Location: ' . BASEURL . '/user/stok-voucher');
+                header('Location: ' . BASEURL . '/user/stok_voucher');
                 exit;
             }
         }
@@ -27,12 +27,12 @@ class Login extends Controller
             if ($username === 'admin' && $password === 'admin123') {
                 $_SESSION['login'] = true;
                 $_SESSION['role'] = 'admin';
-                header('Location: ' . BASEURL . '/admin/kelolah-akun');
+                header('Location: ' . BASEURL . '/admin/kelolah_akun');
                 exit;
             } elseif ($username === 'user' && $password === 'user123') {
                 $_SESSION['login'] = true;
                 $_SESSION['role'] = 'user';
-                header('Location: ' . BASEURL . '/user/stok-voucher');
+                header('Location: ' . BASEURL . '/user/stok_voucher');
                 exit;
             } else {
                 //gagal Login

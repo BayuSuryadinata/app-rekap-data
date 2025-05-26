@@ -112,10 +112,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="<?= BASEURL; ?>/admin/index" class="nav-link" style="background-color: #17a2b8 !important; /* biru muda */
+              <a href="<?= BASEURL; ?>/admin/kelolah_akun" class="nav-link" style="background-color: #494e53 !important; /* biru muda */
                 color: white !important;
                 font-weight: bold;
-                border-left: 5px solid #117a8b;">
+                border-left: 5px solid #494e53;">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Kelolah Akun
@@ -123,7 +123,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
             </li>
             <li class="nav-item">
-              <a href="rekap-penjualan.php" class="nav-link">
+              <a href="<?= BASEURL; ?>/admin/rekap_penjualan" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Rekap Penjualan
@@ -131,7 +131,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
             </li>
             <li class="nav-item">
-              <a href="cash-flow.php" class="nav-link">
+              <a href="<?= BASEURL; ?>/admin/cash_flow" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Cash Flow
